@@ -8,7 +8,9 @@
  * astronomical and astrological properties.
  */
 
-import type { PlanetName } from "../enums/planet";
+import type { PlanetName } from "../enums/planet.ts";
+import type { Rashi } from "../enums/rashi.ts";
+import type { Nakshatra } from "../enums/nakshatra.ts";
 
 export interface Planet {
     identity: PlanetIdentity;
@@ -47,7 +49,7 @@ export interface PlanetaryCoordinates {
 }
 
 export interface RashiPlacement {
-    sign: string;
+    sign: Rashi;
 
     signIndex: number;
 
@@ -61,7 +63,7 @@ export interface RashiPlacement {
 }
 
 export interface NakshatraPlacement {
-    name: string;
+    name: Nakshatra;
 
     index: number;
 
@@ -73,7 +75,7 @@ export interface NakshatraPlacement {
 export interface HousePlacement {
     houseNumber: number;
 
-    houseSign: string;
+    houseSign: Rashi;
 
     houseDegree: number;
 }

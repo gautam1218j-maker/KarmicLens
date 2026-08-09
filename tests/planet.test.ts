@@ -1,5 +1,7 @@
 import { PlanetName } from "../shared/enums/planet.ts";
 import type { Planet } from "../shared/types/planet.ts";
+import { Rashi } from "../shared/enums/rashi.ts";
+import { Nakshatra } from "../shared/enums/nakshatra.ts";
 const sun: Planet = {
     identity: {
         name: PlanetName.Sun,
@@ -16,7 +18,7 @@ const sun: Planet = {
     },
 
     rashi: {
-        sign: "Leo",
+        sign: Rashi.Simha,
         signIndex: 5,
         degree: 3,
         minute: 27,
@@ -25,7 +27,7 @@ const sun: Planet = {
     },
 
     nakshatra: {
-        name: "Magha",
+        name: Nakshatra.Magha,
         index: 10,
         pada: 1,
         degreeInNakshatra: 0.95,
@@ -33,7 +35,7 @@ const sun: Planet = {
 
     house: {
         houseNumber: 1,
-        houseSign: "Leo",
+        houseSign: Rashi.Simha,
         houseDegree: 3.45,
     },
 
